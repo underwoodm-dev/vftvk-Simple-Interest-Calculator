@@ -12,7 +12,7 @@ function compute()
     var interest = principal * years * rate / 100;
 
     var year = new Date()
-    var this_year = now.getFullYear() + Number(years);
+    var this_year = year.getFullYear() + Number(years);
 
     document.getElementById("result").innerHTML = 
         "<div>" +
