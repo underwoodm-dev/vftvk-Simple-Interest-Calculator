@@ -1,5 +1,4 @@
-function compute()
-{
+
     var principal = document.getElementById("principal").value;
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
@@ -10,9 +9,10 @@ function compute()
     
     p = document.getElementById("principal").value;
     
-    function updateRate(newRate) 
+    function updateRate() 
     {
-        document.getElementById("rate_val").innerText=newRate;
+        var rateval = document.getElementById("rate").value;
+        document.getElementById("rate_val").innerText=rateval;
     }
     
     function computeInterest()
@@ -31,5 +31,5 @@ function compute()
         {
             document.getElementById("principal").focus();
         }
-}
+
         
