@@ -10,10 +10,9 @@ function compute()
     
     p = document.getElementById("principal").value;
     
-    function updateRate() 
+    function updateRate(newRate) 
     {
-        var rateval = document.getElementById("rate").value;
-        document.getElementById("rate_val").innerText=rateval;
+        document.getElementById("rate_val").innerText=newRate;
     }
     
     function computeInterest()
